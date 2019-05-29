@@ -13,7 +13,13 @@ import Foundation
 struct Dictionary {
     
     let name: String
-    let description: String
-    //don't need description later down the line - comment out later. But I do need the video/picture. But not for the search preview thing.
+    let signId: Int
+    //don't need description later down the line - comment out later. But I do need the video/picture. But not for the search preview thing. 5/30/19 - changed description to signID: Int
     
+    
+    // do i need to init?
+    init(name: String, signId: Int) {
+        self.name = name
+        self.signId = signId
+    }
 }
