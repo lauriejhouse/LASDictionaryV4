@@ -103,28 +103,7 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
         
         return cell
         
-        
-        //NEED TO ADD THIS TO THE CELL FOR ROW AT TO GET TEH SEAARCH FUNCTIONING CORRECTLY?
-        /*
- let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! SignTableViewCell
- //added as signtableviewcell. if crashes, try to fix, or remove. Worked fine without it
- 
- let sign: Signs
- 
- if inSearchMode {
- sign = filteredSigns[indexPath.row]
- } else {
- sign = signsArray[indexPath.row]
- }
- //using configure cell instead of this. change back to this if it doesn;t work.
- //        cell.textLabel!.text = sign.signName
- //        cell.detailTextLabel!.text = candy.category
- cell.configureTableCell(signs: sign)
- cell.accessoryType = .detailDisclosureButton
- 
- return cell
- 
- */
+
         
         
         

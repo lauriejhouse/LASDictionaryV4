@@ -6,9 +6,19 @@
 //  Copyright © 2019 LAS. All rights reserved.
 //
 
+
+/*
+ 
+ THINGS TO DO FOR PROGMATIC RESTRUCTURE.
+ 
+ 1. Going to have to get video view up and going and firebase stuff back up and running.
+ 2. OED API? Cross reference whats in FM vs OED? - in the excel sheet words with descritpion are in the database. Figure out how to seperate the two. CSV for LAS signs/words. API for the OED other. - But i need to get rid of duplicates/figure out which are duplicates
+ 3.
+ 
+ */
+
+
 import UIKit
-
-
 
 class MainTabBarController: UITabBarController {
     
@@ -33,7 +43,7 @@ class MainTabBarController: UITabBarController {
         viewControllers = [
             generateNavigationController(for: DictionarySearchController(), title: "Search", image: #imageLiteral(resourceName: "search")),
             generateNavigationController(for: ViewController(), title: "Favorites", image: #imageLiteral(resourceName: "favorites")),
-            generateNavigationController(for: ViewController(), title: "Dictionary", image: #imageLiteral(resourceName: "downloads"))
+            generateNavigationController(for: ViewController(), title: "Dictionary", image: #imageLiteral(resourceName: "downloads")),
         ]
     }
     
