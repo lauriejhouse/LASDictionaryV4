@@ -47,14 +47,14 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     func parseJSONSignDictionary() {
         
         //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
-        if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "convertcsv", withExtension: "json") {
             do {
                 let date = Date()
                 let data = try Data(contentsOf: url)
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                     
                     (json["results"] as? [[String:Any]])?.forEach { j in
-                        if let name = j["identifier"] as? String, let id = j["id"] as? Int {
+                        if let name = j["Identifier"] as? String, let id = j["Id"] as? Int {
                             
                             
                             let sign = Dictionary(name: name, signId: id)

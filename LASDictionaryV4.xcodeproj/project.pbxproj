@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C58AECD22A1B4E9009FF58E /* convertcsv (1).json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */; };
+		8C58AECF22A1B5CC009FF58E /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58AECE22A1B5CC009FF58E /* convertcsv.json */; };
 		8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A3229ED45900A2F053 /* csvjson.json */; };
 		8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC4228316F1003B04A7 /* AppDelegate.swift */; };
 		8CE46AC7228316F1003B04A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC6228316F1003B04A7 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "convertcsv (1).json"; sourceTree = "<group>"; };
+		8C58AECE22A1B5CC009FF58E /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CC2F6A3229ED45900A2F053 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8CE46AC1228316F1003B04A7 /* LASDictionaryV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE46AC4228316F1003B04A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				8CE46AC8228316F1003B04A7 /* Main.storyboard */,
 				8CE46ACB228316F1003B04A7 /* Assets.xcassets */,
 				8CE46ACD228316F1003B04A7 /* LaunchScreen.storyboard */,
+				8C58AECE22A1B5CC009FF58E /* convertcsv.json */,
+				8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */,
 				8CC2F6A3229ED45900A2F053 /* csvjson.json */,
 				8CE46AD0228316F1003B04A7 /* Info.plist */,
 			);
@@ -152,8 +158,10 @@
 			files = (
 				8CE46ACF228316F1003B04A7 /* LaunchScreen.storyboard in Resources */,
 				8CE46ACC228316F1003B04A7 /* Assets.xcassets in Resources */,
+				8C58AECF22A1B5CC009FF58E /* convertcsv.json in Resources */,
 				8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */,
 				8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */,
+				8C58AECD22A1B4E9009FF58E /* convertcsv (1).json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
