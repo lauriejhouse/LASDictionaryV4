@@ -43,7 +43,6 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    //not working correctly. Maybe because I don't have it set up all the way?
     func parseJSONSignDictionary() {
         
         //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
