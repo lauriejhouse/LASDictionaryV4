@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C58AECD22A1B4E9009FF58E /* convertcsv (1).json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */; };
 		8C58AECF22A1B5CC009FF58E /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58AECE22A1B5CC009FF58E /* convertcsv.json */; };
 		8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A3229ED45900A2F053 /* csvjson.json */; };
+		8CC2F6A622A6C7D300A2F053 /* OEDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A522A6C7D300A2F053 /* OEDAPI.swift */; };
 		8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC4228316F1003B04A7 /* AppDelegate.swift */; };
 		8CE46AC7228316F1003B04A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC6228316F1003B04A7 /* ViewController.swift */; };
 		8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE46AC8228316F1003B04A7 /* Main.storyboard */; };
@@ -18,12 +18,14 @@
 		8CE46AD822831729003B04A7 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AD722831729003B04A7 /* Dictionary.swift */; };
 		8CE46ADB22831745003B04A7 /* DictionarySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46ADA22831745003B04A7 /* DictionarySearchController.swift */; };
 		8CE46ADD22831767003B04A7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46ADC22831767003B04A7 /* MainTabBarController.swift */; };
+		DA97ADC1B0DE67895144FDC5 /* Pods_LASDictionaryV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3361C3A96C1D9EC22D05D3 /* Pods_LASDictionaryV4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "convertcsv (1).json"; sourceTree = "<group>"; };
+		6ABD8017A827FABBDC744B0C /* Pods-LASDictionaryV4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.release.xcconfig"; sourceTree = "<group>"; };
 		8C58AECE22A1B5CC009FF58E /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CC2F6A3229ED45900A2F053 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
+		8CC2F6A522A6C7D300A2F053 /* OEDAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEDAPI.swift; sourceTree = "<group>"; };
 		8CE46AC1228316F1003B04A7 /* LASDictionaryV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE46AC4228316F1003B04A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE46AC6228316F1003B04A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		8CE46AD722831729003B04A7 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		8CE46ADA22831745003B04A7 /* DictionarySearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySearchController.swift; sourceTree = "<group>"; };
 		8CE46ADC22831767003B04A7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DC3361C3A96C1D9EC22D05D3 /* Pods_LASDictionaryV4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E279D0F7E99501389EC7FA66 /* Pods-LASDictionaryV4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA97ADC1B0DE67895144FDC5 /* Pods_LASDictionaryV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8B8746F91C34842D60F102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E279D0F7E99501389EC7FA66 /* Pods-LASDictionaryV4.debug.xcconfig */,
+				6ABD8017A827FABBDC744B0C /* Pods-LASDictionaryV4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8CE46AB8228316F1003B04A7 = {
 			isa = PBXGroup;
 			children = (
 				8CE46AC3228316F1003B04A7 /* LASDictionaryV4 */,
 				8CE46AC2228316F1003B04A7 /* Products */,
+				2C8B8746F91C34842D60F102 /* Pods */,
+				A64521635E2E9D438D86E109 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +91,9 @@
 				8CE46ACB228316F1003B04A7 /* Assets.xcassets */,
 				8CE46ACD228316F1003B04A7 /* LaunchScreen.storyboard */,
 				8C58AECE22A1B5CC009FF58E /* convertcsv.json */,
-				8C58AECC22A1B4E9009FF58E /* convertcsv (1).json */,
 				8CC2F6A3229ED45900A2F053 /* csvjson.json */,
 				8CE46AD0228316F1003B04A7 /* Info.plist */,
+				8CC2F6A522A6C7D300A2F053 /* OEDAPI.swift */,
 			);
 			path = LASDictionaryV4;
 			sourceTree = "<group>";
@@ -98,6 +114,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		A64521635E2E9D438D86E109 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC3361C3A96C1D9EC22D05D3 /* Pods_LASDictionaryV4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CE46AD3228316F1003B04A7 /* Build configuration list for PBXNativeTarget "LASDictionaryV4" */;
 			buildPhases = (
+				2CA2BC58276EFAD44315CA2A /* [CP] Check Pods Manifest.lock */,
 				8CE46ABD228316F1003B04A7 /* Sources */,
 				8CE46ABE228316F1003B04A7 /* Frameworks */,
 				8CE46ABF228316F1003B04A7 /* Resources */,
+				9AF21B00523A32CCA47E0341 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,11 +187,49 @@
 				8C58AECF22A1B5CC009FF58E /* convertcsv.json in Resources */,
 				8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */,
 				8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */,
-				8C58AECD22A1B4E9009FF58E /* convertcsv (1).json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CA2BC58276EFAD44315CA2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LASDictionaryV4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF21B00523A32CCA47E0341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CE46ABD228316F1003B04A7 /* Sources */ = {
@@ -177,6 +241,7 @@
 				8CE46ADD22831767003B04A7 /* MainTabBarController.swift in Sources */,
 				8CE46ADB22831745003B04A7 /* DictionarySearchController.swift in Sources */,
 				8CE46AD822831729003B04A7 /* Dictionary.swift in Sources */,
+				8CC2F6A622A6C7D300A2F053 /* OEDAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +385,7 @@
 		};
 		8CE46AD4228316F1003B04A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E279D0F7E99501389EC7FA66 /* Pods-LASDictionaryV4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +404,7 @@
 		};
 		8CE46AD5228316F1003B04A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABD8017A827FABBDC744B0C /* Pods-LASDictionaryV4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

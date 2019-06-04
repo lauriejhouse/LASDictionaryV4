@@ -7,14 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 
 class DictionarySearchController: UITableViewController, UISearchBarDelegate {
-//
-//    let dictionary = [
-//    Dictionary(name: "Absorb", description: "Sign this with this letter"),
-//    Dictionary(name: "Alpha", description: "Sign it with this"),
-//
-//    ]
+
     
     var signsArray = [Dictionary]()
     var filteredSigns = [Dictionary]()
@@ -45,7 +41,6 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     
     func parseJSONSignDictionary() {
         
-        //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
         if let url = Bundle.main.url(forResource: "convertcsv", withExtension: "json") {
             do {
                 let date = Date()
@@ -128,6 +123,7 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+       
         if searchBar.text == nil || searchBar.text == "" {
             inSearchMode = false
             view.endEditing(true)
@@ -138,8 +134,31 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
             
             tableView.reloadData()
         }
+        let url = "https://od-api.oxforddictionaries.com/api/v2/search/en-gb?q=\(searchText)"
+            Alamofire.request(url).responseData { (dataResponse) in
+               if let err = dataResponse.error {
+                    print("Failed to contact yahoo", err)
+                    return
+                }
+                
+                guard let data = dataResponse.data else {
+                    return
+                }
+                
+                let dummyString = String(data: data, encoding: .utf8)
+                print(dummyString ?? "") //called nil coalescing
+                
+        }
+        //start adding alamofire stuff here? or it might go inside the 'else' statement. Because we'll be in 'inSearchMode'
+        //https://od-api.oxforddictionaries.com/api/v2/search/en-gb?q=good%20luck - search example on OED API. May need to put in the thing that makes searching with spaces/% work, like in the v2 app.
+
+        
     }
     
+    
+    
+    
+   
     
     
 }
