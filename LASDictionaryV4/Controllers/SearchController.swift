@@ -8,13 +8,7 @@
 
 import UIKit
 
-class DictionarySearchController: UITableViewController, UISearchBarDelegate {
-//
-//    let dictionary = [
-//    Dictionary(name: "Absorb", description: "Sign this with this letter"),
-//    Dictionary(name: "Alpha", description: "Sign it with this"),
-//
-//    ]
+class SearchController: UITableViewController, UISearchBarDelegate {
     
     var signsArray = [Dictionary]()
     var filteredSigns = [Dictionary]()
@@ -33,7 +27,7 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.delegate = self
-        parseJSONSignDictionary()
+        parseJSONSigns()
         self.definesPresentationContext = true
 
         
@@ -43,10 +37,8 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    //not working correctly. Maybe because I don't have it set up all the way?
-    func parseJSONSignDictionary() {
+    func parseJSONSigns() {
         
-        //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
         if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
             do {
                 let date = Date()
@@ -71,18 +63,13 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    //example from demo podcast App
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        print(searchText)
-//        //later implement alamofire with custom api? ****NEED TO MAKE MY OWN API**** - using JSON file and implimentation instead.
-//    }
+ 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if inSearchMode {
             return filteredSigns.count
         }
         
-        //        return signsArray.count. returning 0 makes it so only shows results when typing in the search box.
         return 0
     }
 
@@ -98,15 +85,10 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
             dictionary = signsArray[indexPath.row]
         }
         
-//        let dictionary = self.signsArray[indexPath.row]
         cell.textLabel?.text = dictionary.name
         
         return cell
-        
 
-        
-        
-        
     }
     
     
@@ -122,7 +104,7 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        filteredSigns = signsArray.filter({(signs : Dictionary) -> Bool in return signs.name.lowercased().contains(searchText.lowercased())
+        filteredSigns = signsArray.filter({(signs : Dictionary) -> Bool in return signs.name.contains(searchText.lowercased())
             
         })
         tableView.reloadData()
@@ -135,7 +117,7 @@ class DictionarySearchController: UITableViewController, UISearchBarDelegate {
             tableView.reloadData()
         } else {
             inSearchMode = true
-            filteredSigns = signsArray.filter{$0.name.range(of: searchBar.text!) != nil}
+            filteredSigns = signsArray.filter{$0.name.range(of: searchBar.text!, options: .caseInsensitive) != nil}
             
             tableView.reloadData()
         }

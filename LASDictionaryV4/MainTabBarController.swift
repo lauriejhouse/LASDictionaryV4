@@ -13,9 +13,15 @@
  
  1. Going to have to get video view up and going and firebase stuff back up and running.
  2. OED API? Cross reference whats in FM vs OED? - in the excel sheet words with descritpion are in the database. Figure out how to seperate the two. CSV for LAS signs/words. API for the OED other. - But i need to get rid of duplicates/figure out which are duplicates
-    Remove all Words that don't have a descritpoin from excel file - those are the OED words. Use JSON for LAS words. And AlamoFire and OED API 
+    Remove all Words that don't have a descritpoin from excel file - those are the OED words. Use JSON for LAS words. And AlamoFire and OED API 6/2/19 - words are seperated. 6/4-2019 - Maybe not be able to use API because of client issues on OED API.
 
- 3.
+
+ 3. I'LL NEED TO PULL THE FIREBASE/URL/PERCENTAGE CODE FROM V2 TO GET THE VIDEOS TO WORK.
+ 4. Need to seperate/pull the letters from the csv, and put them into another cvs. 
+ 
+
+ 
+ 
  
  */
 
@@ -43,7 +49,7 @@ class MainTabBarController: UITabBarController {
     func setupViewControllers() {
         
         viewControllers = [
-            generateNavigationController(for: DictionarySearchController(), title: "Search", image: #imageLiteral(resourceName: "search")),
+            generateNavigationController(for: SearchController(), title: "Search", image: #imageLiteral(resourceName: "search")),
             generateNavigationController(for: ViewController(), title: "Favorites", image: #imageLiteral(resourceName: "favorites")),
             generateNavigationController(for: ViewController(), title: "Dictionary", image: #imageLiteral(resourceName: "downloads")),
         ]
