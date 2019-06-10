@@ -65,7 +65,6 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     
     
     func setupTableView() {
-       // tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
         let nib = UINib(nibName: "SignCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
