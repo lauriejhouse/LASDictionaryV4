@@ -76,23 +76,39 @@ class SearchController: UITableViewController, UISearchBarDelegate {
             return filteredSigns.count
         }
         
-        return 0
+            return 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! signCell
         
-        let dictionary = self.signsArray[indexPath.row]
+        var dictionary = self.signsArray[indexPath.row]
+        
+        if inSearchMode {
+                        dictionary = filteredSigns[indexPath.row]
+                    } else {
+                        dictionary = signsArray[indexPath.row]
+                    }
 
         cell.signs = dictionary
         
 
+
+        //OLD WAY OF DOING IT THAT WORKED. BEFORE ADDING SIGNCELL FILES.
+//        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+//
+//        let dictionary: Dictionary
+//
 //        if inSearchMode {
-//            filteredDictionary = filteredSigns[indexPath.row]
+//            dictionary = filteredSigns[indexPath.row]
 //        } else {
 //            dictionary = signsArray[indexPath.row]
 //        }
+//
+//       let dictionary = self.signsArray[indexPath.row]
+//        cell.textLabel?.text = dictionary.name
+        
         
         
         return cell

@@ -11,14 +11,17 @@ import UIKit
 
 class signCell: UITableViewCell {
     
+    @IBOutlet weak var signLabel: UILabel!
+    
+    
     var signs: Dictionary! {
         didSet {
              signLabel.text = signs.name
+            signLabel.numberOfLines = 0
         }
     }
     
-    
-    @IBOutlet weak var signLabel: UILabel!
+
     
     
     
