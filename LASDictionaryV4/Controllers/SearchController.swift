@@ -122,7 +122,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let signsController = SignsController()
-        let signs = self.signsArray[indexPath.row]
+        let signs = self.filteredSigns[indexPath.row]
         navigationController?.pushViewController(signsController, animated: true)
         signsController.signs = signs
         
