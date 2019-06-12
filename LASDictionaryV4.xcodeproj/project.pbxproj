@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A3229ED45900A2F053 /* csvjson.json */; };
+		8CCBEF3A22B18ABA000AECFA /* SignsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBEF3922B18ABA000AECFA /* SignsController.swift */; };
 		8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC4228316F1003B04A7 /* AppDelegate.swift */; };
 		8CE46AC7228316F1003B04A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC6228316F1003B04A7 /* ViewController.swift */; };
 		8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE46AC8228316F1003B04A7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		8CC2F6A3229ED45900A2F053 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
+		8CCBEF3922B18ABA000AECFA /* SignsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsController.swift; sourceTree = "<group>"; };
 		8CE46AC1228316F1003B04A7 /* LASDictionaryV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE46AC4228316F1003B04A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE46AC6228316F1003B04A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8CE46ADA22831745003B04A7 /* SearchController.swift */,
+				8CCBEF3922B18ABA000AECFA /* SignsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				8CE46AC7228316F1003B04A7 /* ViewController.swift in Sources */,
 				8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */,
+				8CCBEF3A22B18ABA000AECFA /* SignsController.swift in Sources */,
 				8CE46ADD22831767003B04A7 /* MainTabBarController.swift in Sources */,
 				8CE46ADB22831745003B04A7 /* SearchController.swift in Sources */,
 				8CE46AD822831729003B04A7 /* Dictionary.swift in Sources */,

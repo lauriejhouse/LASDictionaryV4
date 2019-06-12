@@ -64,6 +64,19 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     }
     
     
+    //MARK: - Table View
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let signsController = SignsController()
+        let signs = self.filteredSigns[indexPath.row]
+        navigationController?.pushViewController(signsController, animated: true)
+        signsController.signs = signs
+        
+        
+        
+    }
+    
     func setupTableView() {
        // tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
