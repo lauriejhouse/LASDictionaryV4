@@ -19,20 +19,23 @@
  3. I'LL NEED TO PULL THE FIREBASE/URL/PERCENTAGE CODE FROM V2 TO GET THE VIDEOS TO WORK.
  4. Need to seperate/pull the letters from the csv, and put them into another cvs. 
  
- 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE!
+ 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE! 6/11/19 - DELETE ALL LOWERCASE DUPLICATES. Keeping the Proper cap oens.
  
  6. ***If no video, have default image show of 'video coming soon'?
  
  7. Need to get Dicitonary tab up and running - can pull code from V2, or modify this code in V4.
- 8. Need 'button'/tab to change to other languages???? I'm not sure if we were still doing this.
+ 8. Need 'button'/tab to change to other languages???? I'm not sure if we were still doing this. - 6/1119 - still doing this. Will need to seperate the CSV file for other languages.
  9. Need seperate baby signs searchController and VC. Also need seperate JSON for that.
  10. Improve tab bar images to better reflect the LAS app, as well as a possible color scheme?
+ 11. Add offline viewiong/download of videos incase people don't have wifi access.
  
- 11. ****Helpful/Useful to have audio description of signs for people that are auditory learners. Same for text description? Or will videos be clear enough?
  
  12. If doing other lagnuages/ for the different alphabets can use soemthing similar to LBTA podcast lesson 7; where it lists the podcast name and picture with how many episodes in each. the LAS version would list alphabet language, with how many 'words'/letters are in each one.
  
  13. Use swipe away navigation (Youtube LBTA) to go from playing video back to selection? Make the App cooler instead of with a standard back button.
+ 14. Have a sentences section.
+ 15. Also need a quiz section
+ 
  
  */
 
@@ -68,7 +71,7 @@ class MainTabBarController: UITabBarController {
     }
     
     
-    
+   
     //MARK: - Helper Functions
     
     //can name 'for' keyword anything you want, for or with.

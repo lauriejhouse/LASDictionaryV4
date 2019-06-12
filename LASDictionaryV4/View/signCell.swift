@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Do i even need to make things work this way when they worked fine before? 
 
 class signCell: UITableViewCell {
     

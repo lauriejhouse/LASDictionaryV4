@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SearchController: UITableViewController, UISearchBarDelegate {
     
@@ -69,6 +70,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         let nib = UINib(nibName: "SignCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if inSearchMode {
