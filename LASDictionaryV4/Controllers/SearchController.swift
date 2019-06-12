@@ -67,8 +67,9 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     func setupTableView() {
        // tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
-        let nib = UINib(nibName: "SignCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: cellId)
+//        let nib = UINib(nibName: "SignCell", bundle: nil)
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,18 +82,17 @@ class SearchController: UITableViewController, UISearchBarDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! signCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         
-        let dictionary = self.signsArray[indexPath.row]
-
-        cell.signs = dictionary
+        let dictionary: Dictionary
         
-
-//        if inSearchMode {
-//            filteredDictionary = filteredSigns[indexPath.row]
-//        } else {
-//            dictionary = signsArray[indexPath.row]
-//        }
+        if inSearchMode {
+            dictionary = filteredSigns[indexPath.row]
+        } else {
+            dictionary = signsArray[indexPath.row]
+        }
+        
+        cell.textLabel?.text = dictionary.name
         
         
         return cell
