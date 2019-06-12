@@ -63,6 +63,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
             }
         }
     }
+    //MARK:- UItableView
     
     
     func setupTableView() {
@@ -70,6 +71,8 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         let nib = UINib(nibName: "SignCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
     }
+    
+    
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,11 +119,20 @@ class SearchController: UITableViewController, UISearchBarDelegate {
 
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let signsController = SignsController()
+        let signs = self.signsArray[indexPath.row]
+        navigationController?.pushViewController(signsController, animated: true)
+        signsController.signs = signs
+        
+        
+        
+    }
     
     
     
-    
-    // MARK: - Search Bar
+    // MARK:- Search Bar
     
     func searchBarIsEmpty() -> Bool {
         //Returns true if empty or nil
