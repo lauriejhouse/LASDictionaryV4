@@ -33,6 +33,10 @@
  12. If doing other lagnuages/ for the different alphabets can use soemthing similar to LBTA podcast lesson 7; where it lists the podcast name and picture with how many episodes in each. the LAS version would list alphabet language, with how many 'words'/letters are in each one.
  
  13. Use swipe away navigation (Youtube LBTA) to go from playing video back to selection? Make the App cooler instead of with a standard back button.
+ 
+ 
+ 
+ To be built waaay later.
  14. Have a sentences section.
  15. Also need a quiz section
  
@@ -48,9 +52,11 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tabBar.tintColor = .blue
+        tabBar.tintColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
+    
         UINavigationBar.appearance().prefersLargeTitles = true
-        
+//        UINavigationBar.appearance().tintColor = UIColor(red: 100/255, green: 102/255, blue: 204/255, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
         
         setupViewControllers()
         
@@ -67,6 +73,7 @@ class MainTabBarController: UITabBarController {
             generateNavigationController(for: ViewController(), title: "Favorites", image: #imageLiteral(resourceName: "favorites")),
             generateNavigationController(for: ViewController(), title: "Dictionary", image: #imageLiteral(resourceName: "downloads")),
             generateNavigationController(for: ViewController(), title: "Baby Signs", image: #imageLiteral(resourceName: "max_volume"))
+            
         ]
     }
     
@@ -76,13 +83,16 @@ class MainTabBarController: UITabBarController {
     
     //can name 'for' keyword anything you want, for or with.
     fileprivate func generateNavigationController(for rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
-        
+
         let navController = UINavigationController(rootViewController: rootViewController)
         
         rootViewController.navigationItem.title = title
         navController.tabBarItem.title = title
-        navController.tabBarItem.image = image
+       
         
+        
+        
+        navController.tabBarItem.image = image
         return navController
     }
     

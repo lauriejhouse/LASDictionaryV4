@@ -15,13 +15,11 @@ class SignsController: UITableViewController {
     var signs: Dictionary? {
         didSet {
             navigationItem.title = signs?.name
-
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     

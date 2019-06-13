@@ -70,6 +70,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         
         let nib = UINib(nibName: "SignCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
+        
     }
     
     
@@ -124,6 +125,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         let signsController = SignsController()
         let signs = self.filteredSigns[indexPath.row]
         navigationController?.pushViewController(signsController, animated: true)
+
         signsController.signs = signs
         
         

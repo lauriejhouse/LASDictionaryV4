@@ -19,11 +19,13 @@ class signCell: UITableViewCell {
         didSet {
              signLabel.text = signs.name
             signLabel.numberOfLines = 0
+            signLabel.textColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
+
         }
+
+
     }
     
 
-    
-    
     
 }

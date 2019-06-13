@@ -21,5 +21,6 @@ struct Dictionary {
     init(name: String, signId: Int) {
         self.name = name
         self.signId = signId
+        
     }
 }
