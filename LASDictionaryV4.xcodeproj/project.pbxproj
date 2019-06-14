@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8C58AED422AAAB95009FF58E /* SignCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C58AED322AAAB95009FF58E /* SignCell.xib */; };
 		8C58AED622AAD2B6009FF58E /* signCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58AED522AAD2B6009FF58E /* signCell.swift */; };
+		8CAF5E8922B422C700D568A3 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E8822B422C700D568A3 /* VideoPlayerView.swift */; };
+		8CAF5E8D22B423F800D568A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */; };
 		8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A3229ED45900A2F053 /* csvjson.json */; };
 		8CCBEF3822B15544000AECFA /* SignsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBEF3722B15544000AECFA /* SignsController.swift */; };
 		8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC4228316F1003B04A7 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		8C58AED322AAAB95009FF58E /* SignCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignCell.xib; sourceTree = "<group>"; };
 		8C58AED522AAD2B6009FF58E /* signCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signCell.swift; sourceTree = "<group>"; };
+		8CAF5E8822B422C700D568A3 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC2F6A3229ED45900A2F053 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8CCBEF3722B15544000AECFA /* SignsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsController.swift; sourceTree = "<group>"; };
 		8CE46AC1228316F1003B04A7 /* LASDictionaryV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8CAF5E8322B3F20E00D568A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8CAF5E8822B422C700D568A3 /* VideoPlayerView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8CE46AB8228316F1003B04A7 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 				8C58AED222AAAB57009FF58E /* View */,
 				8CE46AD622831729003B04A7 /* Models */,
 				8CE46AC4228316F1003B04A7 /* AppDelegate.swift */,
+				8CAF5E8322B3F20E00D568A3 /* Helpers */,
 				8CE46AD922831745003B04A7 /* Controllers */,
 				8CE46AC6228316F1003B04A7 /* ViewController.swift */,
 				8CE46ADC22831767003B04A7 /* MainTabBarController.swift */,
@@ -88,6 +101,7 @@
 				8CE46ACD228316F1003B04A7 /* LaunchScreen.storyboard */,
 				8CC2F6A3229ED45900A2F053 /* csvjson.json */,
 				8CE46AD0228316F1003B04A7 /* Info.plist */,
+				8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */,
 			);
 			path = LASDictionaryV4;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 				8C58AED422AAAB95009FF58E /* SignCell.xib in Resources */,
 				8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */,
 				8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */,
+				8CAF5E8D22B423F800D568A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +202,7 @@
 				8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */,
 				8CE46ADD22831767003B04A7 /* MainTabBarController.swift in Sources */,
 				8CCBEF3822B15544000AECFA /* SignsController.swift in Sources */,
+				8CAF5E8922B422C700D568A3 /* VideoPlayerView.swift in Sources */,
 				8CE46ADB22831745003B04A7 /* SearchController.swift in Sources */,
 				8CE46AD822831729003B04A7 /* Dictionary.swift in Sources */,
 			);

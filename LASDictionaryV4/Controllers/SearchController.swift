@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class SearchController: UITableViewController, UISearchBarDelegate {
     
