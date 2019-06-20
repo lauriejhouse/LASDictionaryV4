@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 import AVKit
-
+import Firebase
 
 //NEED TO LINK UP/FORM CONNECTION TO SIGNS CONTROLLER SO THE VIDEO CAN PLAY CORRECTLY.
 
