@@ -19,7 +19,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     //UISearch Controller
     
     let searchController = UISearchController(searchResultsController: nil)
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +30,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         parseJSONSigns()
         self.definesPresentationContext = true
         setupTableView()
-        
-        //1. register a cell for tableview
-        
+       
         
     }
     
@@ -125,6 +123,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         let signs = self.filteredSigns[indexPath.row]
         navigationController?.pushViewController(signsController, animated: true)
 
+
         signsController.signs = signs
         
         
@@ -139,6 +138,7 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         //Returns true if empty or nil
         
         return searchController.searchBar.text?.isEmpty ?? true
+
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
@@ -152,11 +152,14 @@ class SearchController: UITableViewController, UISearchBarDelegate {
         if searchBar.text == nil || searchBar.text == "" {
             inSearchMode = false
             view.endEditing(true)
+
+           
+            
             tableView.reloadData()
         } else {
             inSearchMode = true
             filteredSigns = signsArray.filter{$0.name.range(of: searchBar.text!, options: .caseInsensitive) != nil}
-            
+//            searchBar.placeholder = "Search for a sign.."
             tableView.reloadData()
         }
     }
@@ -164,6 +167,5 @@ class SearchController: UITableViewController, UISearchBarDelegate {
     
     
 }
-
 
 

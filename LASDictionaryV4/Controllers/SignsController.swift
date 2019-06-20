@@ -12,6 +12,7 @@ import UIKit
 //Commenting out the Collection View COntroller to try and make the UIView, or old table view work.
 //class SignsController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+//Original.
 //class SignsController: UITableViewController {
 
 class SignsController: UIViewController {
@@ -36,8 +37,8 @@ class SignsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //NOT SURE IF THIS GOES HERE. or if i need to construct a whole new somethihgn to put this in.
-        let videoLauncher = VideoLauncher()
-        videoLauncher.showVideoPlayer()
+//        let videoLauncher = VideoLauncher()
+//        videoLauncher.showVideoPlayer()
     }
     
     
