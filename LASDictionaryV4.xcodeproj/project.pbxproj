@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44E4C6378112A7B2EA64FA9F /* Pods-LASDictionaryV4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.release.xcconfig"; sourceTree = "<group>"; };
 		57158B04EAB1E092AF529499 /* Pods-LASDictionaryV4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.release.xcconfig"; sourceTree = "<group>"; };
 		801C6D861C5F33C9FF5C2BF5 /* Pods_LASDictionaryV4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C58AED322AAAB95009FF58E /* SignCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignCell.xib; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		8CE46AD722831729003B04A7 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		8CE46ADA22831745003B04A7 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		8CE46ADC22831767003B04A7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C00918284556EDC68C6C06B1 /* Pods-LASDictionaryV4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.debug.xcconfig"; sourceTree = "<group>"; };
 		E2609D5A9F36671ED5F56858 /* Pods-LASDictionaryV4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV4.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +145,9 @@
 			children = (
 				E2609D5A9F36671ED5F56858 /* Pods-LASDictionaryV4.debug.xcconfig */,
 				57158B04EAB1E092AF529499 /* Pods-LASDictionaryV4.release.xcconfig */,
+				C00918284556EDC68C6C06B1 /* Pods-LASDictionaryV4.debug.xcconfig */,
+				44E4C6378112A7B2EA64FA9F /* Pods-LASDictionaryV4.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,7 +163,6 @@
 				8CE46ABE228316F1003B04A7 /* Frameworks */,
 				8CE46ABF228316F1003B04A7 /* Resources */,
 				F2E00863890338D9B3E72E04 /* [CP] Embed Pods Frameworks */,
-				25DD045EE9012E6FECB7D1CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,15 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LASDictionaryV4-checkManifestLockResult.txt",
 			);
@@ -243,38 +241,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		25DD045EE9012E6FECB7D1CB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F2E00863890338D9B3E72E04 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV4/Pods-LASDictionaryV4-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -7,16 +7,10 @@ target 'LASDictionaryV4' do
 
   # Pods for LASDictionaryV4
 
-pod 'Firebase/AdMob'
-pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
-pod 'Firebase/Crash'
-pod 'Firebase/Database'
-pod 'Firebase/DynamicLinks'
-pod 'Firebase/Invites'
-pod 'Firebase/Messaging'
-pod 'Firebase/Performance'
-pod 'Firebase/RemoteConfig'
-pod 'Firebase/Storage'
+
+pod ‘Firebase/Core’
+pod ‘Firebase/Database’
+pod ‘Firebase/Auth’
+
 
 end

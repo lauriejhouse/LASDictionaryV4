@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "905C56D117A25C9A70BCB8383D8B4D6C"
+               BlueprintIdentifier = "3C67B45566E9A7F3A9B1522B67A0FAF6"
                BuildableName = "Pods_LASDictionaryV4.framework"
                BlueprintName = "Pods-LASDictionaryV4"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "905C56D117A25C9A70BCB8383D8B4D6C"
+            BlueprintIdentifier = "3C67B45566E9A7F3A9B1522B67A0FAF6"
             BuildableName = "Pods_LASDictionaryV4.framework"
             BlueprintName = "Pods-LASDictionaryV4"
             ReferencedContainer = "container:Pods.xcodeproj">
