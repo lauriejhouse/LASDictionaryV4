@@ -11,6 +11,7 @@
 		8C58AED622AAD2B6009FF58E /* signCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58AED522AAD2B6009FF58E /* signCell.swift */; };
 		8CAF5E8922B422C700D568A3 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E8822B422C700D568A3 /* VideoPlayerView.swift */; };
 		8CAF5E8D22B423F800D568A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */; };
+		8CAF5E8F22BD4C0200D568A3 /* All.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF5E8E22BD4C0200D568A3 /* All.mov */; };
 		8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A3229ED45900A2F053 /* csvjson.json */; };
 		8CCBEF3822B15544000AECFA /* SignsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBEF3722B15544000AECFA /* SignsController.swift */; };
 		8CE46AC5228316F1003B04A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE46AC4228316F1003B04A7 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		8C58AED522AAD2B6009FF58E /* signCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signCell.swift; sourceTree = "<group>"; };
 		8CAF5E8822B422C700D568A3 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CAF5E8E22BD4C0200D568A3 /* All.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = All.mov; sourceTree = "<group>"; };
 		8CC2F6A3229ED45900A2F053 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8CCBEF3722B15544000AECFA /* SignsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsController.swift; sourceTree = "<group>"; };
 		8CE46AC1228316F1003B04A7 /* LASDictionaryV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				8CC2F6A3229ED45900A2F053 /* csvjson.json */,
 				8CE46AD0228316F1003B04A7 /* Info.plist */,
 				8CAF5E8C22B423F800D568A3 /* GoogleService-Info.plist */,
+				8CAF5E8E22BD4C0200D568A3 /* All.mov */,
 			);
 			path = LASDictionaryV4;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				8CC2F6A4229ED45900A2F053 /* csvjson.json in Resources */,
 				8CE46ACA228316F1003B04A7 /* Main.storyboard in Resources */,
 				8CAF5E8D22B423F800D568A3 /* GoogleService-Info.plist in Resources */,
+				8CAF5E8F22BD4C0200D568A3 /* All.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

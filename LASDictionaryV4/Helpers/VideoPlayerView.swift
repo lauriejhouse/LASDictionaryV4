@@ -1,30 +1,30 @@
 //
 //  VideoPlayerView.swift
-//  LASDictionaryV4
+//  LASDictionaryV2
 //
-//  Created by Jackie Norstrom on 6/14/19.
+//  Created by Jackie on 3/26/19.
 //  Copyright © 2019 LAS. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 import AVKit
-import Firebase
 
-//NEED TO LINK UP/FORM CONNECTION TO SIGNS CONTROLLER SO THE VIDEO CAN PLAY CORRECTLY.
 
 class VideoPlayerView: UIView {
     
-    var signs: Dictionary!
+    var signs: Dictionary?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         backgroundColor = .black
         
-        //warning: NEED TO POSSIBLY CHANGE THE URL. AND ADD FIREBASE PODA
-        let urlString = "https://firebasestorage.googleapis.com/v0/b/lasdictioanryv4.appspot.com/o/\(signs.name).mov?alt=media&token=b53450da-b65d-4c82-818c-1bca992e7642"
-        //https://firebasestorage.googleapis.com/v0/b/lasdictioanryv4.appspot.com/o/-ance.mov?alt=media&token=b53450da-b65d-4c82-818c-1bca992e7642
+        //warning: use your own video url here, the bandwidth for google firebase storage will run out as more and more people use this file
+        let urlString = "https://firebasestorage.googleapis.com/v0/b/lasdictioanryv4.appspot.com/o/\(signs?.name ?? "").mov?alt=media&token=b53450da-b65d-4c82-818c-1bca992e7642"
+        
+        
+        
         if let url = NSURL(string: urlString) {
             let player = AVPlayer(url: url as URL)
             

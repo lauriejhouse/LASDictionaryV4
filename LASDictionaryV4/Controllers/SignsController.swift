@@ -8,6 +8,8 @@
 
 import UIKit
 
+//I Can put the sign title where the video title goes in the LBTA example.
+
 
 //Commenting out the Collection View COntroller to try and make the UIView, or old table view work.
 //class SignsController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
@@ -17,7 +19,7 @@ import UIKit
 
 class SignsController: UIViewController {
     
-    
+    //*****Probably need to make a link/call back to video view here. Because this is where the video view will show up.
     var signs: Dictionary? {
         didSet {
             navigationItem.title = signs?.name
@@ -33,14 +35,20 @@ class SignsController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //NOT SURE IF THIS GOES HERE. or if i need to construct a whole new somethihgn to put this in.
-//        let videoLauncher = VideoLauncher()
-//        videoLauncher.showVideoPlayer()
+        
+        let videoLauncher = VideoLauncher()
+        videoLauncher.showVideoPlayer()
     }
     
+    //this may go here instead.
+//    override func viewDidAppear(_ animated: Bool) {
+//        let videoLauncher = VideoLauncher()
+//        videoLauncher.showVideoPlayer()
+//        
+//    }
     
     
 //    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
